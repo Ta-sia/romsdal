@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt Oss - Romsdal VGS</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Romsdal</h1>
+        <button class="menu-button" id="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Navigation -->
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+    <div class="navigation" id="navigation">
+      <div class="nav-header">
+        <div class="nav-logo">
+          <div class="nav-logo-circle">R</div>
+          <span>Romsdal</span>
+        </div>
+        <button class="close-button" id="close-nav">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <ul class="nav-items">
+        <li>
+          <a href="1im.html" class="nav-item">
+            1IM
+          </a>
+        </li>
+        <li>
+          <a href="2it.html" class="nav-item">
+            2IT
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="nav-item">
+            Romsdal
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-item active">
+            Kontakt Oss
+            <div class="nav-item-indicator"></div>
+          </a>
+        </li>
+      </ul>
+      
+      <div class="nav-footer">
+        <p>© <span id="current-year"></span> Romsdal VGS</p>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+      <div class="page-container">
+        <!-- Contact Page Content -->
+        <div class="contact-page">
+          <h1 class="contact-title">Kontakt Oss</h1>
+          
+          <div class="contact-container">
+            <div class="contact-info">
+              <h2>For hva trenger dere kontakt oss?</h2>
+              <p class="contact-description">
+                Vi er her for å hjelpe deg med alle spørsmål du måtte ha om våre programmer, fasiliteter eller andre henvendelser.
+              </p>
+              
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <span>info@romsdalvgs.no</span>
+                </div>
+                <div class="contact-detail-item">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <span>+47 123 45 678</span>
+                </div>
+                <div class="contact-detail-item">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                  <span>Skolevegen 1, 6000 Ålesund</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form-container">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Navn</label>
+                  <input type="text" id="name" name="name" required placeholder="Ditt navn">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">E-post</label>
+                  <input type="email" id="email" name="email" required placeholder="din.epost@eksempel.no">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Melding</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Skriv din henvendelse her..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button" id="submit-button">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Send Melding</span>
+                </button>
+              </form>
+              
+              <div id="form-success" class="form-success" style="display: none;">
+                <div class="success-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 12L11 15L16 9" stroke="currentColor" stroke  stroke-width="2"/>
+                    <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3>Takk for din henvendelse!</h3>
+                <p>Vi vil kontakte deg så snart som mulig.</p>
+                <button class="reset-button" id="reset-form">Send en ny henvendelse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-circle">R</div>
+          <span>Romsdal</span>
+        </div>
+        <div class="footer-links">
+          <a href="1im.html">1IM</a>
+          <a href="2it.html">2IT</a>
+          <a href="index.html">Romsdal</a>
+          <a href="contact.html">Kontakt Oss</a>
+        </div>
+        <p class="copyright">© <span id="footer-year"></span> Romsdal VGS</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
+

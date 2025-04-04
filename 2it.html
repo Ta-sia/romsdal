@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2IT - Romsdal VGS</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/class.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Romsdal</h1>
+        <button class="menu-button" id="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Navigation -->
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+    <div class="navigation" id="navigation">
+      <div class="nav-header">
+        <div class="nav-logo">
+          <div class="nav-logo-circle">R</div>
+          <span>Romsdal</span>
+        </div>
+        <button class="close-button" id="close-nav">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <ul class="nav-items">
+        <li>
+          <a href="1im.html" class="nav-item">
+            1IM
+          </a>
+        </li>
+        <li>
+          <a href="2it.html" class="nav-item active">
+            2IT
+            <div class="nav-item-indicator"></div>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="nav-item">
+            Romsdal
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-item">
+            Kontakt Oss
+          </a>
+        </li>
+      </ul>
+      
+      <div class="nav-footer">
+        <p>© <span id="current-year"></span> Romsdal VGS</p>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+      <div class="page-container">
+        <!-- 2IT Class Page Content -->
+        <div class="class-page">
+          <div class="class-header">
+            <h1>2IT</h1>
+            <p class="class-description">Andre år Informasjonsteknologi</p>
+          </div>
+          
+          <div class="class-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="stat-content">
+                <h3>Elever</h3>
+                <p>8</p>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="stat-content">
+                <h3>Fag</h3>
+                <p>5</p>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <div class="stat-content">
+                <h3>Skoleår</h3>
+                <p>2023/2024</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="class-content">
+            <div class="class-section">
+              <h2>Elever</h2>
+              <div class="students-grid">
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Jonas Berg">
+                  </div>
+                  <h3>Jonas Berg</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Emma Solberg">
+                  </div>
+                  <h3>Emma Solberg</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Markus Vik">
+                  </div>
+                  <h3>Markus Vik</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Ida Haugen">
+                  </div>
+                  <h3>Ida Haugen</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Kristian Moe">
+                  </div>
+                  <h3>Kristian Moe</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Sara Jensen">
+                  </div>
+                  <h3>Sara Jensen</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Tobias Dahl">
+                  </div>
+                  <h3>Tobias Dahl</h3>
+                </div>
+                <div class="student-card">
+                  <div class="student-avatar">
+                    <img src="https://via.placeholder.com/100" alt="Nora Bakke">
+                  </div>
+                  <h3>Nora Bakke</h3>
+                </div>
+              </div>
+            </div>
+            
+            <div class="class-section">
+              <h2>Fag</h2>
+              <div class="subjects-list">
+                <div class="subject-card">
+                  <h3>Programmering</h3>
+                  <div class="subject-details">
+                    <p><strong>Lærer:</strong> Øystein Røen</p>
+                    <p class="subject-time">
+                      <i class="fas fa-clock"></i>
+                      Man, Ons 09:00-11:30
+                    </p>
+                  </div>
+                </div>
+                <div class="subject-card">
+                  <h3>Databasedesign</h3>
+                  <div class="subject-details">
+                    <p><strong>Lærer:</strong> Lars Eriksen</p>
+                    <p class="subject-time">
+                      <i class="fas fa-clock"></i>
+                      Tir, Tor 13:00-15:30
+                    </p>
+                  </div>
+                </div>
+                <div class="subject-card">
+                  <h3>Nettverk</h3>
+                  <div class="subject-details">
+                    <p><strong>Lærer:</strong> Morten Hansen</p>
+                    <p class="subject-time">
+                      <i class="fas fa-clock"></i>
+                      Fre 09:00-12:00
+                    </p>
+                  </div>
+                </div>
+                <div class="subject-card">
+                  <h3>Webutvikling</h3>
+                  <div class="subject-details">
+                    <p><strong>Lærer:</strong> Kari Larsen</p>
+                    <p class="subject-time">
+                      <i class="fas fa-clock"></i>
+                      Man, Tor 13:00-14:30
+                    </p>
+                  </div>
+                </div>
+                <div class="subject-card">
+                  <h3>IT-sikkerhet</h3>
+                  <div class="subject-details">
+                    <p><strong>Lærer:</strong> Per Hansen</p>
+                    <p class="subject-time">
+                      <i class="fas fa-clock"></i>
+                      Ons, Fre 13:00-14:30
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-circle">R</div>
+          <span>Romsdal</span>
+        </div>
+        <div class="footer-links">
+          <a href="1im.html">1IM</a>
+          <a href="2it.html">2IT</a>
+          <a href="index.html">Romsdal</a>
+          <a href="contact.html">Kontakt Oss</a>
+        </div>
+        <p class="copyright">© <span id="footer-year"></span> Romsdal VGS</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/class.js"></script>
+</body>
+</html>
+
