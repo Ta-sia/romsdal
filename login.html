@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logg Inn - Romsdal VGS</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Romsdal</h1>
+        <div class="auth-title" id="auth-title">Logg Inn</div>
+        <a href="index.html" class="home-link">Home</a>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+      <div class="auth-container">
+        <div class="forms-container">
+          <!-- Login Form -->
+          <div class="form-section login-section active" id="login-section">
+            <form id="login-form" class="auth-form">
+              <div class="form-group">
+                <input type="text" id="login-username" name="username" required placeholder="Username">
+              </div>
+              
+              <div class="form-group">
+                <input type="password" id="login-password" name="password" required placeholder="Password">
+              </div>
+              
+              <button type="submit" class="auth-button">
+                Logg inn
+              </button>
+            </form>
+            <p class="switch-form-text">
+              Har du ikke en konto? <a href="#" id="show-register">Registrer deg</a>
+            </p>
+          </div>
+          
+          <!-- Register Form -->
+          <div class="form-section register-section" id="register-section">
+            <form id="register-form" class="auth-form">
+              <div class="form-group">
+                <input type="text" id="register-username" name="username" required placeholder="Username">
+              </div>
+              
+              <div class="form-group">
+                <input type="password" id="register-password" name="password" required placeholder="Password">
+              </div>
+              
+              <div class="form-group">
+                <input type="password" id="register-confirm-password" name="confirm-password" required placeholder="Password på nytt">
+              </div>
+              
+              <button type="submit" class="auth-button">
+                Registrer
+              </button>
+            </form>
+            <p class="switch-form-text">
+              Har du allerede en konto? <a href="#" id="show-login">Logg inn</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p class="copyright">Romsdal VGS</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
+

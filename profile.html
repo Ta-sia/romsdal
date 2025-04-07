@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elev Side - Romsdal VGS</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Elev Side</h1>
+        <a href="index.html" class="home-link">Home</a>
+      </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+      <div class="profile-container">
+        <!-- Student Info Card -->
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <img id="profile-image" src="https://via.placeholder.com/150" alt="Student Profile">
+            </div>
+            <div class="profile-info">
+              <h2 id="student-name">Navn laster...</h2>
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Skole:</span>
+                  <span id="student-school" class="info-value">Romsdal vgs</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Fag:</span>
+                  <span id="student-class" class="info-value">-</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Fødselsdato:</span>
+                  <span id="student-birthdate" class="info-value">-</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Age:</span>
+                  <span id="student-age" class="info-value">-</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Epost:</span>
+                  <span id="student-email" class="info-value">-</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Tlf:</span>
+                  <span id="student-phone" class="info-value">-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Me Section -->
+        <div class="profile-section">
+          <h3>Om meg</h3>
+          <div class="section-content">
+            <p id="student-about">Laster informasjon...</p>
+          </div>
+        </div>
+        
+        <!-- Teacher Comments Section -->
+        <div class="profile-section">
+          <h3>Kommentar om elev</h3>
+          <div class="section-content">
+            <div id="teacher-comments">
+              <!-- Comments will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p class="copyright">Romsdal VGS</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
+

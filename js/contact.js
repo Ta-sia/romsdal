@@ -1,78 +1,64 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Contact form submission
-    const contactForm = document.getElementById("contact-form")
-    const formSuccess = document.getElementById("form-success")
-    const resetFormButton = document.getElementById("reset-form")
-  
-    if (contactForm) {
-      contactForm.addEventListener("submit", (e) => {
-        e.preventDefault()
-  
-        // Validate form
-        const name = document.getElementById("name").value
-        const email = document.getElementById("email").value
-        const message = document.getElementById("message").value
-  
-        if (!name || !email || !message) {
-          alert("Vennligst fyll ut alle feltene.")
-          return
-        }
-  
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        if (!emailRegex.test(email)) {
-          alert("Vennligst skriv inn en gyldig e-postadresse.")
-          return
-        }
-  
-        // Show loading state
-        const submitButton = document.getElementById("submit-button")
-        submitButton.disabled = true
-        submitButton.innerHTML = `
-          <span class="button-loading">
-            <span class="loading-dot"></span>
-            <span class="loading-dot"></span>
-            <span class="loading-dot"></span>
-          </span>
-        `
-  
-        // Simulate form submission
-        setTimeout(() => {
-          contactForm.style.display = "none"
-          formSuccess.style.display = "block"
-        }, 1500)
-      })
-    }
-  
-    // Reset form
-    if (resetFormButton) {
-      resetFormButton.addEventListener("click", () => {
-        contactForm.reset()
-        contactForm.style.display = "grid"
-        formSuccess.style.display = "none"
-  
-        const submitButton = document.getElementById("submit-button")
-        submitButton.disabled = false
-        submitButton.innerHTML = `
-          <i class="fas fa-paper-plane"></i>
-          <span>Send Melding</span>
-        `
-      })
-    }
-  
-    // Form field animations
-    const formFields = document.querySelectorAll(".form-group input, .form-group textarea")
-  
-    formFields.forEach((field) => {
-      field.addEventListener("focus", function () {
-        this.parentElement.style.transform = "translateX(5px)"
-        this.parentElement.style.transition = "transform 0.3s"
-      })
-  
-      field.addEventListener("blur", function () {
-        this.parentElement.style.transform = "translateX(0)"
-      })
-    })
+  // Set current year in footer and navigation
+  const currentYear = new Date().getFullYear()
+  const yearElements = document.querySelectorAll("#current-year, #footer-year")
+  yearElements.forEach((el) => {
+    if (el) el.textContent = currentYear
   })
-  
-  
+
+  // Navigation functionality
+  const menuButton = document.getElementById("menu-button")
+  const closeNavButton = document.getElementById("close-nav")
+  const navBackdrop = document.getElementById("nav-backdrop")
+  const navigation = document.getElementById("navigation")
+
+  // Open navigation
+  if (menuButton) {
+    menuButton.addEventListener("click", () => {
+      navigation.classList.add("active")
+      navBackdrop.classList.add("active")
+    })
+  }
+
+  // Close navigation
+  function closeNav() {
+    navigation.classList.remove("active")
+    navBackdrop.classList.remove("active")
+  }
+
+  if (closeNavButton) {
+    closeNavButton.addEventListener("click", closeNav)
+  }
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener("click", closeNav)
+  }
+
+  // Add animation classes to elements
+  function addAnimationClasses() {
+    const animatedElements = document.querySelectorAll(
+      ".feature-card, .program-card, .student-card, .subject-card, .stat-card",
+    )
+
+    animatedElements.forEach((element) => {
+      if (!element.classList.contains("animated")) {
+        element.classList.add("animated")
+      }
+    })
+  }
+
+  // Call animation function when page loads
+  setTimeout(addAnimationClasses, 100)
+
+  // Hide loading screen if it exists
+  const loadingScreen = document.getElementById("loading-screen")
+  if (loadingScreen) {
+    setTimeout(() => {
+      loadingScreen.style.opacity = "0"
+      setTimeout(() => {
+        loadingScreen.style.display = "none"
+      }, 500)
+    }, 1500)
+  }
+})
+

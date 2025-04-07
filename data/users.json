@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "taras",
+      "password": "password123",
+      "name": "Sydoruk Taras",
+      "class": "2IT",
+      "birthdate": "05.03.2005",
+      "age": 20,
+      "email": "sydoruktaras00@gmail.com",
+      "phone": "46397055",
+      "profileImage": "https://via.placeholder.com/150",
+      "about": "Om meg....."
+    },
+    {
+      "id": 2,
+      "username": "anna",
+      "password": "anna123",
+      "name": "Anna Hansen",
+      "class": "1IM",
+      "birthdate": "15.06.2006",
+      "age": 18,
+      "email": "anna.hansen@example.com",
+      "phone": "45678901",
+      "profileImage": "https://via.placeholder.com/150",
+      "about": "Hei, jeg er Anna og jeg liker å programmere og designe nettsider."
+    },
+    {
+      "id": 3,
+      "username": "Aron",
+      "password": "Aron123",
+      "name": "Elev Aron",
+      "class": "Ikke angitt",
+      "birthdate": "14.07.2007",
+      "age": 17,
+      "email": "",
+      "phone": "",
+      "profileImage": "https://via.placeholder.com/150",
+      "about": "Ingen informasjon ennå"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "author": "Øystein Røen",
+      "date": "2023-11-15T10:30:00",
+      "text": "Taras er en flink elev som viser stor interesse for programmering."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "author": "Kari Larsen",
+      "date": "2023-12-05T14:15:00",
+      "text": "God framgang i webutvikling. Fortsett det gode arbeidet!"
+    }
+  ]
+}
