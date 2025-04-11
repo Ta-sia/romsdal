@@ -12,32 +12,6 @@
       "phone": "46397055",
       "profileImage": "https://via.placeholder.com/150",
       "about": "Om meg....."
-    },
-    {
-      "id": 2,
-      "username": "anna",
-      "password": "anna123",
-      "name": "Anna Hansen",
-      "class": "1IM",
-      "birthdate": "15.06.2006",
-      "age": 18,
-      "email": "anna.hansen@example.com",
-      "phone": "45678901",
-      "profileImage": "https://via.placeholder.com/150",
-      "about": "Hei, jeg er Anna og jeg liker å programmere og designe nettsider."
-    },
-    {
-      "id": 3,
-      "username": "Aron",
-      "password": "Aron123",
-      "name": "Elev Aron",
-      "class": "Ikke angitt",
-      "birthdate": "14.07.2007",
-      "age": 17,
-      "email": "",
-      "phone": "",
-      "profileImage": "https://via.placeholder.com/150",
-      "about": "Ingen informasjon ennå"
     }
   ],
   "comments": [
