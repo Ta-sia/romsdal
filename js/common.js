@@ -34,22 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navBackdrop.addEventListener("click", closeNav)
   }
 
-  // Add animation classes to elements
-  function addAnimationClasses() {
-    const animatedElements = document.querySelectorAll(
-      ".feature-card, .program-card, .student-card, .subject-card, .stat-card",
-    )
-
-    animatedElements.forEach((element) => {
-      if (!element.classList.contains("animated")) {
-        element.classList.add("animated")
-      }
-    })
-  }
-
-  // Call animation function when page loads
-  setTimeout(addAnimationClasses, 100)
-
   // Hide loading screen if it exists
   const loadingScreen = document.getElementById("loading-screen")
   if (loadingScreen) {
@@ -61,4 +45,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1500)
   }
 })
-

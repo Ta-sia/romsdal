@@ -8,7 +8,6 @@
   font-size: 2.5rem;
   color: var(--primary);
   margin-bottom: 2rem;
-  animation: fadeInUp 0.8s;
 }
 
 .contact-container {
@@ -22,7 +21,6 @@
   background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  animation: fadeInUp 0.8s;
 }
 
 .contact-info h2 {
@@ -45,20 +43,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  animation: fadeInRight 0.8s forwards;
-  opacity: 0;
-}
-
-.contact-detail-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.contact-detail-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.contact-detail-item:nth-child(3) {
-  animation-delay: 0.3s;
 }
 
 .contact-icon {
@@ -70,8 +54,6 @@
   background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  animation: fadeInUp 0.8s 0.2s forwards;
-  opacity: 0;
 }
 
 .contact-form {
@@ -221,4 +203,3 @@
     padding: 1.5rem;
   }
 }
-

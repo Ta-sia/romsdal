@@ -35,15 +35,12 @@
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  animation: fadeInUp 0.8s;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  animation: fadeInUp 0.8s 0.2s forwards;
-  opacity: 0;
 }
 
 .hero-button {
@@ -56,8 +53,6 @@
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s;
-  animation: fadeInUp 0.8s 0.4s forwards;
-  opacity: 0;
 }
 
 .hero-button:hover {
@@ -79,7 +74,6 @@
   color: var(--primary);
   margin-bottom: 2.5rem;
   position: relative;
-  animation: fadeInUp 0.8s;
 }
 
 .features-section h2::after,
@@ -108,24 +102,6 @@
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeInUp 0.8s forwards;
-  opacity: 0;
-}
-
-.feature-card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.feature-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.feature-card:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.feature-card:nth-child(4) {
-  animation-delay: 0.4s;
 }
 
 .feature-card:hover {
@@ -170,20 +146,6 @@
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  animation: fadeInUp 0.8s forwards;
-  opacity: 0;
-}
-
-.program-card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.program-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.program-card:nth-child(3) {
-  animation-delay: 0.3s;
 }
 
 .program-card:hover {
@@ -265,4 +227,3 @@
 .login-link:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-

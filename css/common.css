@@ -300,18 +300,6 @@ footer {
 
 .loading-logo {
   margin-bottom: 1.5rem;
-  animation: pulse 1.5s infinite alternate;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(0.95);
-    opacity: 0.8;
-  }
-  to {
-    transform: scale(1.05);
-    opacity: 1;
-  }
 }
 
 .loading-circle {
@@ -332,48 +320,9 @@ footer {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 2px;
-  animation: fadeIn 1.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.fade-in-up {
-  animation: fadeInUp 0.5s ease-out forwards;
-}
-
-.fade-in-right {
-  animation: fadeInRight 0.5s ease-out forwards;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -389,4 +338,3 @@ footer {
     align-items: center;
   }
 }
-
